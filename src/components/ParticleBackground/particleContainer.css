@@ -1,0 +1,34 @@
+.div__1 {
+  position: relative;
+}
+#tsparticles {
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  z-index: -10;
+  background: linear-gradient(to top, #81c4e9 0%, #369fd3 100%);
+}
+.div__1__div {
+  height: 100vh;
+}
+.fade {
+  height: 7.4rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
+}
+
+/*********************************************** Media Queries **************************************************************/
+@media only screen and (max-width: 523px) {
+  #tsparticles {
+    height: 60vh;
+  }
+}
+@media only screen and (min-width: 524px) and (max-width: 768px) {
+  #tsparticles {
+    height: 79.5vh;
+  }
+}

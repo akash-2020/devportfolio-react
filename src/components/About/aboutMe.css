@@ -1,0 +1,174 @@
+#about-me {
+  padding: 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+.wave-emoji {
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: wave;
+  display: inline-block;
+  transform-origin: 70% 70%;
+}
+.greeting-main {
+  width: 45%;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.greeting-text {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.social-media-div {
+  font-size: 2em;
+  margin-top: 10px;
+}
+.icon-button {
+  margin-bottom: 10px;
+}
+.icon-button i {
+  color: #fff;
+  border-radius: 3.6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  user-select: none;
+  width: 30px;
+  margin: 0 5px 10px;
+}
+.github i {
+  background-color: #333;
+}
+.linkedin i {
+  background-color: #0e76a8;
+}
+.google i {
+  background-color: #ea4335;
+}
+.instagram i {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+.github i:hover,
+.google i:hover,
+.linkedin i:hover {
+  background-color: #000;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+.instagram .insta-icon:hover {
+  background: black;
+}
+.greeting-main .greeting-text-div .greeting-text .wave-emoji img {
+  height: 1em;
+  width: 1em;
+  margin: 0px 0.05em 0px 0.1em;
+  vertical-align: -0.1em;
+}
+.greeting-text-p img {
+  height: 1em;
+  width: 1em;
+  margin: 0px 0.05em 0px 0.1em;
+  vertical-align: -0.1em;
+}
+.button-greeting-div {
+  display: flex;
+  margin-bottom: 15px;
+}
+.main-button {
+  text-decoration: none;
+  background-color: #45a7d8;
+  border: 1px solid #45a7d8;
+  color: #fff;
+  font-weight: 700;
+  width: max-content;
+  padding: 13px 22px;
+  margin-right: 50px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.main-button:hover {
+  background-color: #fff;
+  color: #45a7d8;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  text-decoration: none;
+}
+.subTitle {
+  color: #868e96;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 40px;
+}
+
+/********************************************************** Media Queries ****************************************************************/
+@media only screen and (max-width: 523px) {
+  .greeting-main {
+    width: 75%;
+  }
+  .subTitle {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 28px;
+  }
+  .greeting-text {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 524px) and (max-width: 840px) {
+  .greeting-main {
+    width: 60%;
+  }
+  .subTitle {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 28px;
+  }
+  .greeting-text {
+    font-size: 25px;
+  }
+}

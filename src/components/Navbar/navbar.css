@@ -1,0 +1,63 @@
+.navBar {
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+ul {
+  padding: 20px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 2px 2px 5px 0px rgba(128, 128, 128, 0.53);
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(128, 128, 128, 0.53);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(128, 128, 128, 0.53);
+  animation-name: dropHeader;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-duration: 0.75s;
+}
+@keyframes dropHeader {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+li {
+  list-style-type: none;
+}
+li a {
+  text-decoration: none;
+  color: #3498db;
+  padding: 10px 12px;
+  /* font-weight: 500; */
+}
+li a:hover {
+  background-color: rgba(128, 128, 128, 0.1);
+  /* background-color: black; */
+  padding: 10px 12px;
+  border-radius: 3px;
+}
+
+/***********************************************************Media Queries*********************************************************************/
+@media only screen and (max-width: 523px) {
+  ul {
+    width: 100%;
+    background-color: rgba(51, 122, 183, 0.5);
+    box-shadow: none;
+    padding: 0px 0px;
+    border-radius: 0;
+  }
+  li a {
+    color: white;
+    padding: 0;
+  }
+  li {
+    padding: 10px 15px;
+  }
+}

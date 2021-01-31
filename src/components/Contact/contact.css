@@ -1,0 +1,66 @@
+#contact {
+  padding: 30px 0px;
+  display: flex;
+  justify-content: center;
+}
+.contact {
+  width: 45%;
+}
+.mainContact__div {
+  display: grid;
+  /* padding: 0px 20px; */
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  gap: 0.5rem 0rem;
+}
+.mainContact__div p {
+  color: #868e96;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 40px;
+  /* word-break: break-all; */
+  text-align: justify;
+}
+.contact__heading {
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.mainContact__div p .fa-bolt {
+  color: orange;
+  margin-right: 12px;
+}
+#contact .fadeBottom {
+  height: 7.4rem;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
+}
+
+/************************************************************ Media Queries *****************************************************************/
+@media only screen and (max-width: 523px) {
+  .contact {
+    width: 75%;
+  }
+  .contact__heading {
+    font-size: 25px;
+  }
+  .mainContact__div p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+@media only screen and (min-width: 524px) and (max-width: 840px) {
+  .contact {
+    width: 60%;
+  }
+  .contact__heading {
+    font-size: 25px;
+  }
+  .mainContact__div p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}

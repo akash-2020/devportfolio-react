@@ -1,0 +1,42 @@
+.whatIDo__Data {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.whatIDo__Data i {
+  text-align: center;
+  font-size: 3rem;
+  word-break: break-all;
+  margin: 15px 20px;
+  color: #868e96;
+  transition: all 0.2s;
+}
+.whatIDo__Data i:hover {
+  color: #645beb;
+}
+.whatIDo__Data i p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+/********************************************************** Media Queries *****************************************************************/
+@media only screen and (max-width: 600px) {
+  .whatIDo__Data i {
+    font-size: 2rem;
+    margin: 15px 7px;
+  }
+  .whatIDo__Data i p {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 524px) and (max-width: 840px) {
+  .whatIDo__Data i {
+    font-size: 2rem;
+    margin: 15px 15px;
+  }
+  .whatIDo__Data i p {
+    font-size: 1rem;
+  }
+}

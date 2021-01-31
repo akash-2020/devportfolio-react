@@ -1,0 +1,135 @@
+.introduction__main {
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+}
+.introduction {
+  height: 92.5vh;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.btnResume {
+  text-decoration: none;
+  color: white;
+  padding: 15px 25px;
+  border: 3px solid #fff;
+  border-radius: 30px;
+  transition: 0.5s ease all;
+}
+.btnResume:hover {
+  color: #3498db;
+  background: #fff;
+  text-decoration: none;
+}
+.devName {
+  color: #fff;
+  font-weight: 900;
+  font-size: 5em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 0.9em;
+}
+.devLastName {
+  margin-bottom: 22px;
+}
+.devType {
+  color: #d2e8ff;
+  font-weight: 500;
+  font-size: 2.25em;
+  margin-bottom: 20px;
+}
+#lead-down {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  bottom: 15px;
+  color: #fff;
+}
+#lead-down span {
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  border: 3px solid #d2e8ff;
+  text-align: center;
+}
+#lead-down span a {
+  color: #337ab7;
+  text-decoration: none;
+}
+#lead-down i {
+  animation: pulsate 1.5s ease;
+  animation-iteration-count: infinite;
+  padding-top: 6.1px;
+  color: white;
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+/************************************************************** Media Queries **************************************************************/
+@media only screen and (max-width: 523px) {
+  .introduction {
+    height: 41.5vh;
+  }
+  .devName {
+    font-size: 2em;
+  }
+  .devType {
+    font-size: 1.25em;
+  }
+  .btnResume {
+    padding: 11px 11px;
+  }
+  #lead-down {
+    display: none;
+  }
+  .devLastName {
+    margin-bottom: 10px;
+  }
+  .btnResume {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 524px) and (max-width: 840px) {
+  .introduction {
+    height: 70.5vh;
+  }
+  .devName {
+    font-size: 3em;
+  }
+  #lead-down {
+    display: none;
+  }
+  .devLastName {
+    margin-bottom: 10px;
+  }
+  .devType {
+    font-size: 1.5em;
+    margin-bottom: 25px;
+  }
+  .btnResume {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1500px) and (max-height: 1370px) {
+  #lead-down {
+    bottom: 60px;
+  }
+}

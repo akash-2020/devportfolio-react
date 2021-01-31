@@ -1,0 +1,57 @@
+#education {
+  padding: 30px 0px;
+  display: flex;
+  justify-content: center;
+}
+.education {
+  width: 45%;
+}
+.mainEducation__div {
+  display: grid;
+  /* padding: 0px 20px; */
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  gap: 0.5rem 0rem;
+}
+.mainEducation__div p {
+  color: #868e96;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 40px;
+  word-break: break-all;
+  text-align: justify;
+}
+.education__heading {
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.mainEducation__div p .fa-bolt {
+  color: orange;
+  margin-right: 12px;
+}
+
+/*************************************************** Media Queries **************************************************************/
+@media only screen and (max-width: 523px) {
+  .education {
+    width: 75%;
+  }
+  .education__heading {
+    font-size: 25px;
+  }
+  .mainEducation__div p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+@media only screen and (min-width: 524px) and (max-width: 840px) {
+  .education {
+    width: 60%;
+  }
+  .education__heading {
+    font-size: 25px;
+  }
+  .mainEducation__div p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}

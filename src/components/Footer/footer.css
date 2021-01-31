@@ -1,0 +1,27 @@
+.fadeBottom {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  margin-top: -100px;
+  height: 9rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(52, 152, 219, 0.3),
+    #3498db
+  );
+}
+.footer-text img {
+  height: 1em;
+  width: 1em;
+  margin: 0px 0.05em 0px 0.1em;
+  vertical-align: -0.1em;
+}
+.fadeBottom p {
+  text-align: center;
+  padding: 15px 0px;
+  color: white;
+  /* background-color: #3498db; */
+  width: 100%;
+  height: fit-content;
+}
